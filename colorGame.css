@@ -1,3 +1,14 @@
 body{
     background-color: #232323;
 }
+.square{
+    width: 30%; /*three squares at 30% plus margins will equal to 100% inside the container*/
+    background: purple;
+    padding-bottom: 30%;
+    float: left; /*otherwise aligned*/
+    margin: 1.66%;
+}
+#container{
+    margin: auto;
+    max-width: 600px;
+}
