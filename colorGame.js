@@ -12,6 +12,7 @@ var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
+var h1 = document.querySelector("h1");
 
 
 colorDisplay.textContent = pickedColor;
@@ -30,6 +31,7 @@ for (var i = 0; i < squares.length; i++) {
             //alert("Correct!");
             messageDisplay.textContent = "Correct!";
             changeColors(clickedColor);
+            h1.style.backgroundColor = clickedColor;
         } else {
             //alert("Wrong!");
             //Wrong color will fade out to background
