@@ -27,6 +27,7 @@ for (var i = 0; i < squares.length; i++) {
         if (clickedColor === pickedColor) {
             //alert("Correct!");
             messageDisplay.textContent = "Correct!";
+            changeColors(clickedColor);
         } else {
             //alert("Wrong!");
             //Wrong color will fade out to background
@@ -35,5 +36,9 @@ for (var i = 0; i < squares.length; i++) {
         }
     });
 }
-
-
+//function to change all square colors to the correct color when the right one is chosen
+function changeColors(color) {
+    for (var i = 0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = color;
+    }
+}
